@@ -10,7 +10,7 @@ Explore cars
 About us
 Blog
 
-8 800 234 56 78
++92 322 0576657 
 Mon - Fri: 9:00 am - 6:00 pm
 
 <ion-icon name="car-outline"></ion-icon>
