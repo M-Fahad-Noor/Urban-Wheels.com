@@ -1,0 +1,91 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    background: url(pic.jpg);
+    background-size: cover;
+}
+.About-1
+{
+    margin: 30px;
+    padding: 5px;
+}
+.About-1 h1
+{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+.About-1 p
+{
+    text-align: center;
+    padding: 5px;
+    color: darkolivegreen;
+    font-size: 15px;
+}
+.About-item
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: whitesmoke;
+    padding: 80px 30px;
+    box-shadow: 0 0 9px rgba(0, 0, 0, .6);
+}
+.About-item i
+{
+    font-size: 25px;
+    margin: 0;
+}
+.About-item h3
+{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.About-item hr
+{
+    width: 150px;
+    height: 3px;
+    background-color: darkcyan;
+    margin: 0 auto;
+    border: none;
+}
+.About-item p
+{
+    margin-top: 20px;
+}
+.About-item:hover
+{
+    background-color: darkcyan;
+}
+.About-item:hover i,
+.About-item:hover h3,
+.About-item:hover p
+{
+    color: white;
+}
+.About-item:hover hr
+{
+    background: white;
+}
+.About-item:hover i
+{
+    transform: translateY(-20px);
+}
+.About-item:hover i,
+.About-item:hover h3,
+.About-item:hover hr
+{
+    transition: all 400ms ease-in-out;
+}
+footer
+{
+    background: #212226;
+    padding: 20px;
+}
+footer p
+{
+    color: white;
+}
