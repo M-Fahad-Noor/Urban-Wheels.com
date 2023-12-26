@@ -1,0 +1,46 @@
+body
+{
+    padding: 25px;
+    background-size: cover;
+}
+h1
+{
+    color: darkred;
+}
+h3
+{
+    background: darkcyan;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    border-radius: 8px;
+}
+input[type="text"],[type="date"],
+[type="tel"],[type="email"]
+{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+th
+{
+    background: darkcyan;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    border-radius: 8px;
+}
+input[type="textarea"]
+{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+button
+{
+    background: darkred;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    float: left;
+}

@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root
+{
+    --primary-clr: #6c00f9
+    --white:#fff;
+    --text-clr:#464646
+    --tab-list-bg-clr: #dfc8fd
+    --btn--hvr: #4e03b0
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+}
+body
+{
+    font-size: 12px;
+    background:url(painting.jpg);
+    color: black;
+}
+.flex_align_justify
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper
+{
+    min-height: 100vh;
+    padding: 0 20px;
+}
+.tc_wrap
+{
+    width: 700px;
+    max-width: 100%;
+    height: 450px;
+    background: white;
+    display: flex;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.tc_wrap .tabs_list
+{
+    width: 200px;
+    background: #dfc8fd;
+    height: 100%;
+}
+.tc_wrap .tabs_content
+{
+    width: calc(100% - 200px);
+    padding: 0 10px 0 20px;
+    height: 100%;
+}
+.tc_wrap .tabs_content .tabs_head,
+.tc_wrap .tabs_content .tabs_foot
+{
+    color:darkred;
+    padding: 25px 0;
+    height: 70px;
+}
+.tc_wrap .tabs_content .tabs_head
+{
+    text-align: center;
+}
+.tc_wrap .tabs_content .tabs_body
+{
+    height: calc(100% - 140px);
+    overflow: auto;
+}
+.tc_wrap .tabs_list ul
+{
+    padding: 70px 20px;
+    text-align: right;
+}
+.tc_wrap .tabs_list ul li
+{
+    padding: 10px 0;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 3px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+.tc_wrap .tabs_list ul li:before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 2px;
+    height: 100%;
+    background: darkred;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.tc_wrap .tabs_list ul li.active,
+.tc_wrap .tabs_list ul li:hover
+{
+    color: rgb(20, 20, 189);
+}
+.tc_wrap .tabs_list ul li.active:before
+{
+    opacity: 1;
+}
+.tc_wrap .tabs_content .tabs_body .tab_item h3
+{
+    padding-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(20, 20, 189);
+}
+.tc_wrap .tabs_content .tabs_body .tab_item p
+{
+    margin-bottom: 20px;
+}
+.tc_wrap .tabs_content .tabs_body .tab_item .active
+{
+    display: block !important;
+}
+.tc_wrap .tabs_content .tabs_foot button
+{
+    width: 125px;
+    padding: 5px 10px;
+    background: transparent;
+    border: 1px solid;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.tc_wrap .tabs_content .tabs_foot button.decline
+{
+    margin-right: 15px;
+    border-color: darkred;
+    color: darkred;
+}
+.tc_wrap .tabs_content .tabs_foot button.agree
+{
+    color: white;
+    background: lightseagreen;
+    border-color: lightseagreen;
+}
+.tc_wrap .tabs_content .tabs_foot button.decline:hover
+{
+    background: darkred;
+    color: white;
+}
+.tc_wrap .tabs_content .tabs_foot button.agree:hover
+{
+    border-color: lightcoral;
+    background:lightcoral;
+    color: white;
+}
